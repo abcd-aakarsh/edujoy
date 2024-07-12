@@ -78,11 +78,18 @@ const Header = () => {
               Home
             </Link>
             <Link
-              to="/subjects"
+              to="/learn"
               className="block px-3 py-2 rounded-md text-base font-medium hover:text-gray-300"
               onClick={toggleMenu}
             >
-              Subjects
+              Learn
+            </Link>
+            <Link
+              to="/workshop"
+              className="block px-3 py-2 rounded-md text-base font-medium hover:text-gray-300"
+              onClick={toggleMenu}
+            >
+              Workshop
             </Link>
           </div>
         </div>

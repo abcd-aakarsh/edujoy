@@ -7,7 +7,8 @@ import Science from "./components/Science";
 import Maths from "./components/Maths";
 import Engineering from "./components/Engineering";
 import Computer from "./components/Computer";
-
+import ScienceSubtopics from "./components/ScienceSubtopics";
+import ScienceQuiz from "./components/ScienceQuiz";
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -40,6 +41,11 @@ const App = () => {
         {
           path: "/learn/computer",
           element: <Computer />,
+        },
+        { path: "/learn/science/:subjectId", element: <ScienceSubtopics /> },
+        {
+          path: "/learn/science/:subjectId/quiz/:subtopicId",
+          element: <ScienceQuiz />,
         },
       ],
     },
