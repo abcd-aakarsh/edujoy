@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { science_sub } from "../utils/Data";
-import { AiOutlineRocket } from "react-icons/ai"; // Importing an example icon from React Icons
+import { AiOutlineRocket } from "react-icons/ai";
 
 const ScienceQuiz = () => {
   const { subjectId, subtopicId } = useParams();
