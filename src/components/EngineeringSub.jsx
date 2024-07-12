@@ -1,10 +1,9 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
-const SubjectCard = ({ id, name, overview, image }) => {
+const EngineeringSub = ({ id, name, overview, image }) => {
   return (
     <Link
-      to={`/learn/${id}`}
+      to={`/learn/engineering/${id}`}
       className="block bg-white shadow-lg hover:-translate-y-1 transition-all duration-75 rounded-lg overflow-hidden cursor-pointer hover:shadow-lg"
     >
       <div className="rounded-2xl">
@@ -18,4 +17,4 @@ const SubjectCard = ({ id, name, overview, image }) => {
   );
 };
 
-export default SubjectCard;
+export default EngineeringSub;
