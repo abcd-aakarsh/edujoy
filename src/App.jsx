@@ -3,12 +3,14 @@ import HomePage from "./pages/HomePage";
 import LearnPage from "./pages/LearnPage";
 import AppLayout from "./ui/AppLayout";
 import WorkshopPage from "./pages/WorkshopPage";
-import Science from "./components/Science";
+import Science from "./components/Science/Science";
 import Maths from "./components/Maths";
-import Engineering from "./components/Engineering";
+import Engineering from "./components/Engineering/Engineering";
 import Computer from "./components/Computer";
-import ScienceSubtopics from "./components/ScienceSubtopics";
-import ScienceQuiz from "./components/ScienceQuiz";
+import ScienceSubtopics from "./components/Science/ScienceSubtopics";
+import ScienceQuiz from "./components/Science/ScienceQuiz";
+import EngineeringSubtopics from "./components/Engineering/EngineeringSubtopics";
+import EngineeringQuiz from "./components/Engineering/EngineeringQuiz";
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -46,6 +48,14 @@ const App = () => {
         {
           path: "/learn/science/:subjectId/quiz/:subtopicId",
           element: <ScienceQuiz />,
+        },
+        {
+          path: "/learn/engineering/:subjectId",
+          element: <EngineeringSubtopics />,
+        },
+        {
+          path: "/learn/engineering/:subjectId/quiz/:subtopicId",
+          element: <EngineeringQuiz />,
         },
       ],
     },

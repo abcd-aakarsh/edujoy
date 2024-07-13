@@ -1,5 +1,5 @@
 import React from "react";
-import { science_sub } from "../utils/Data";
+import { science_sub } from "../../utils/Data";
 
 import ScienceSubCard from "./ScienceSubCard";
 const Science = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { engineering_sub } from "../utils/Data";
+import { engineering_sub } from "../../utils/Data";
 import EngineeringSub from "./EngineeringSub";
 
 const Engineering = () => {
@@ -12,7 +12,7 @@ const Engineering = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {" "}
-            {engineering_sub?.map((subject) => (
+            {engineering_sub[0].topics?.map((subject) => (
               <EngineeringSub
                 key={subject.id}
                 id={subject.id}

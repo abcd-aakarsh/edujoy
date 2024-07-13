@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { science_sub } from "../utils/Data";
+import { science_sub } from "../../utils/Data";
 import { AiOutlineRocket } from "react-icons/ai";
 
 const ScienceQuiz = () => {
