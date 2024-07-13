@@ -1,8 +1,9 @@
-# React + Vite
+# EduJoy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EduJoy is a web application designed to gamify learning for beginners to intermediate learners in engineering and computer programming.
 
-Currently, two official plugins are available:
+## Features (planned)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive quizzes and learning paths
+- Subject and topic selection
+- Progress tracking and achievements
