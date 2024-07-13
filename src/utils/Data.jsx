@@ -1126,92 +1126,567 @@ export const engineering_sub = [
     ],
   },
 ];
+
 export const maths_sub = [
   {
     id: "algebra",
     name: "Algebra",
-    image:
-      "https://img.freepik.com/premium-photo/algebra-text-effect-gold-jpg-attractive-background-card-photo_873925-578158.jpg?w=740",
-    description:
-      "Study of mathematical symbols and rules for manipulating these symbols.",
     topics: [
       {
         id: "linear-algebra",
         name: "Linear Algebra",
-        description: "Study of linear equations and their applications.",
-        image: "https://example.com/linear-algebra-image.jpg",
+        image:
+          "https://img.freepik.com/premium-photo/algebra-text-effect-gold-jpg-attractive-background-card-photo_873925-578158.jpg?w=740",
+        subtopics: [
+          {
+            id: "vectors",
+            name: "Vectors",
+            description:
+              "Vectors represent quantities that have both magnitude and direction. They are used in physics, engineering, and computer graphics to describe forces, velocities, and rotations.",
+            quizzes: [
+              {
+                question: "What is a vector?",
+                options: [
+                  "A quantity that has only magnitude",
+                  "A quantity that has only direction",
+                  "A quantity that has both magnitude and direction",
+                  "A quantity that has no direction",
+                ],
+                correct: "A quantity that has both magnitude and direction",
+              },
+              {
+                question: "How are vectors represented graphically?",
+                options: [
+                  "As points on a coordinate plane",
+                  "As arrows with direction and length",
+                  "As line segments with a starting point and an endpoint",
+                  "As circles with radius and center point",
+                ],
+                correct: "As arrows with direction and length",
+              },
+              {
+                question: "What is a scalar?",
+                options: [
+                  "A vector quantity",
+                  "A quantity that has magnitude only",
+                  "A directed quantity",
+                  "A quantity with no magnitude",
+                ],
+                correct: "A quantity that has magnitude only",
+              },
+              {
+                question:
+                  "In linear algebra, what is the dot product of two vectors?",
+                options: [
+                  "The sum of their magnitudes",
+                  "The product of their magnitudes",
+                  "The sum of the products of their corresponding components",
+                  "The product of their corresponding components",
+                ],
+                correct:
+                  "The sum of the products of their corresponding components",
+              },
+              {
+                question: "What does the cross product of two vectors produce?",
+                options: [
+                  "A scalar",
+                  "A vector",
+                  "A matrix",
+                  "A complex number",
+                ],
+                correct: "A vector",
+              },
+            ],
+          },
+          {
+            id: "matrices",
+            name: "Matrices",
+            description:
+              "Matrices are rectangular arrays of numbers, symbols, or expressions arranged in rows and columns. They are used extensively in solving systems of linear equations and in transformations in computer graphics.",
+            quizzes: [
+              {
+                question: "What is a matrix?",
+                options: [
+                  "A graphical representation of data",
+                  "A rectangular array of numbers or symbols",
+                  "A sequence of operations",
+                  "A mathematical function",
+                ],
+                correct: "A rectangular array of numbers or symbols",
+              },
+              {
+                question: "How are matrices defined?",
+                options: [
+                  "By their size and content",
+                  "By their rows and columns",
+                  "By their determinant",
+                  "By their inverse",
+                ],
+                correct: "By their rows and columns",
+              },
+              {
+                question:
+                  "What is the determinant of a square matrix used for?",
+                options: [
+                  "To calculate its rank",
+                  "To solve systems of linear equations",
+                  "To find its inverse",
+                  "To calculate its size",
+                ],
+                correct: "To find its inverse",
+              },
+              {
+                question: "What does the transpose of a matrix involve?",
+                options: [
+                  "Multiplying rows by columns",
+                  "Swapping rows and columns",
+                  "Finding the inverse",
+                  "Finding the determinant",
+                ],
+                correct: "Swapping rows and columns",
+              },
+              {
+                question: "What is an identity matrix?",
+                options: [
+                  "A matrix with all elements as 1",
+                  "A matrix with all diagonal elements as 1",
+                  "A matrix with determinant 1",
+                  "A matrix that is symmetrical",
+                ],
+                correct: "A matrix with all diagonal elements as 1",
+              },
+            ],
+          },
+          {
+            id: "polynomials",
+            name: "Polynomials",
+            description:
+              "Polynomials are expressions consisting of variables raised to non-negative integer powers and constants, combined using addition, subtraction, multiplication, and exponentiation.",
+            quizzes: [
+              {
+                question: "What is a polynomial?",
+                options: [
+                  "An equation with complex numbers",
+                  "An expression with variables and constants",
+                  "An irrational number",
+                  "An equation with only one variable",
+                ],
+                correct: "An expression with variables and constants",
+              },
+              {
+                question: "How are polynomials classified?",
+                options: [
+                  "By the number of variables",
+                  "By their degree and number of terms",
+                  "By their coefficients",
+                  "By their roots",
+                ],
+                correct: "By their degree and number of terms",
+              },
+              {
+                question: "What is the degree of a polynomial equation?",
+                options: [
+                  "The number of variables",
+                  "The number of terms",
+                  "The highest exponent in the equation",
+                  "The sum of all coefficients",
+                ],
+                correct: "The highest exponent in the equation",
+              },
+              {
+                question: "What does the Fundamental Theorem of Algebra state?",
+                options: [
+                  "Every polynomial has at least one real root",
+                  "Every polynomial can be factored into linear and quadratic terms",
+                  "Every polynomial equation has a unique solution",
+                  "Every non-constant polynomial has at least one complex root",
+                ],
+                correct:
+                  "Every non-constant polynomial has at least one complex root",
+              },
+              {
+                question: "What is a root of a polynomial?",
+                options: [
+                  "An imaginary number",
+                  "A value that makes the polynomial equal to zero",
+                  "The highest exponent in the polynomial",
+                  "The coefficient of the highest exponent",
+                ],
+                correct: "A value that makes the polynomial equal to zero",
+              },
+            ],
+          },
+        ],
       },
       {
-        id: "abstract-algebra",
-        name: "Abstract Algebra",
-        description:
-          "Study of algebraic structures like groups, rings, and fields.",
-        image: "https://example.com/abstract-algebra-image.jpg",
+        id: "geometry",
+        name: "Geometry",
+        image:
+          "https://img.freepik.com/free-vector/geometry-maths-graphs_23-2147501136.jpg?t=st=1720817197~exp=1720820797~hmac=0522288196a712d2c7619da0b93ba0a987736f1cea8d7cc274dc0427de24802c&w=740",
+        subtopics: [
+          {
+            id: "euclidean-geometry",
+            name: "Euclidean Geometry",
+            description:
+              "Euclidean geometry is the study of flat or two-dimensional shapes. It includes concepts like points, lines, angles, triangles, and circles.",
+            quizzes: [
+              {
+                question: "What is Euclidean geometry?",
+                options: [
+                  "The study of shapes and figures",
+                  "The study of numbers and equations",
+                  "The study of space and time",
+                  "The study of functions and limits",
+                ],
+                correct: "The study of shapes and figures",
+              },
+              {
+                question: "What are points and lines in Euclidean geometry?",
+                options: [
+                  "Basic elements",
+                  "Advanced concepts",
+                  "Complex structures",
+                  "Scientific theories",
+                ],
+                correct: "Basic elements",
+              },
+              {
+                question:
+                  "What are angles and triangles in Euclidean geometry?",
+                options: [
+                  "Basic elements",
+                  "Advanced concepts",
+                  "Complex structures",
+                  "Scientific theories",
+                ],
+                correct: "Basic elements",
+              },
+              {
+                question: "What is a circle in Euclidean geometry?",
+                options: [
+                  "A type of line",
+                  "A type of point",
+                  "A type of angle",
+                  "A type of shape",
+                ],
+                correct: "A type of shape",
+              },
+              {
+                question: "What is the Pythagorean theorem used for?",
+                options: [
+                  "To calculate areas of shapes",
+                  "To solve equations",
+                  "To find lengths in right triangles",
+                  "To measure angles in circles",
+                ],
+                correct: "To find lengths in right triangles",
+              },
+            ],
+          },
+          {
+            id: "differential-geometry",
+            name: "Differential Geometry",
+            description:
+              "Differential geometry is the study of curved surfaces and smooth spaces using techniques from calculus and linear algebra.",
+            quizzes: [
+              {
+                question: "What is differential geometry?",
+                options: [
+                  "The study of curved surfaces",
+                  "The study of flat shapes",
+                  "The study of straight lines",
+                  "The study of abstract shapes",
+                ],
+                correct: "The study of curved surfaces",
+              },
+              {
+                question:
+                  "How are curves and surfaces described in differential geometry?",
+                options: [
+                  "Using equations",
+                  "Using numbers",
+                  "Using words",
+                  "Using symbols",
+                ],
+                correct: "Using equations",
+              },
+              {
+                question: "What is the curvature of a surface?",
+                options: [
+                  "A measure of straightness",
+                  "A measure of flatness",
+                  "A measure of smoothness",
+                  "A measure of deviation",
+                ],
+                correct: "A measure of deviation",
+              },
+              {
+                question: "What is a manifold in differential geometry?",
+                options: [
+                  "A curved surface",
+                  "A smooth space",
+                  "A complex structure",
+                  "A mathematical concept",
+                ],
+                correct: "A smooth space",
+              },
+              {
+                question: "What are geodesics in differential geometry?",
+                options: [
+                  "Curved lines",
+                  "Straight lines",
+                  "Circular paths",
+                  "Complex shapes",
+                ],
+                correct: "Curved lines",
+              },
+            ],
+          },
+          {
+            id: "topology",
+            name: "Topology",
+            description:
+              "Topology is the study of properties of space that are preserved under continuous deformations, such as stretching or bending, but not tearing or gluing.",
+            quizzes: [
+              {
+                question: "What is topology?",
+                options: [
+                  "The study of numbers",
+                  "The study of shapes",
+                  "The study of spaces",
+                  "The study of functions",
+                ],
+                correct: "The study of spaces",
+              },
+              {
+                question:
+                  "How are open sets and closed sets defined in topology?",
+                options: [
+                  "By their shapes",
+                  "By their sizes",
+                  "By their properties",
+                  "By their positions",
+                ],
+                correct: "By their properties",
+              },
+              {
+                question: "What is a homeomorphism in topology?",
+                options: [
+                  "A continuous transformation",
+                  "A linear transformation",
+                  "A smooth transformation",
+                  "A complex transformation",
+                ],
+                correct: "A continuous transformation",
+              },
+              {
+                question: "What are manifolds in topology?",
+                options: [
+                  "Smooth spaces",
+                  "Complex structures",
+                  "Geometric shapes",
+                  "Abstract concepts",
+                ],
+                correct: "Smooth spaces",
+              },
+              {
+                question: "What is the Euler characteristic used to measure?",
+                options: [
+                  "The size of a space",
+                  "The complexity of a space",
+                  "The connectivity of a space",
+                  "The curvature of a space",
+                ],
+                correct: "The connectivity of a space",
+              },
+            ],
+          },
+        ],
       },
       {
-        id: "boolean-algebra",
-        name: "Boolean Algebra",
-        description: "Study of mathematical operations on binary variables.",
-        image: "https://example.com/boolean-algebra-image.jpg",
-      },
-    ],
-  },
-  {
-    id: "geometry",
-    name: "Geometry",
-    image:
-      "https://img.freepik.com/free-vector/geometry-maths-graphs_23-2147501136.jpg?t=st=1720817197~exp=1720820797~hmac=0522288196a712d2c7619da0b93ba0a987736f1cea8d7cc274dc0427de24802c&w=740",
-    description:
-      "Study of shapes, sizes, and properties of space including spatial relationships and geometric figures.",
-    topics: [
-      {
-        id: "euclidean-geometry",
-        name: "Euclidean Geometry",
-        description: "Study of shapes, sizes, and properties of space.",
-        image: "https://example.com/euclidean-geometry-image.jpg",
-      },
-      {
-        id: "differential-geometry",
-        name: "Differential Geometry",
-        description: "Study of curved surfaces and smooth spaces.",
-        image: "https://example.com/differential-geometry-image.jpg",
-      },
-      {
-        id: "topology",
-        name: "Topology",
-        description:
-          "Study of properties of space preserved under continuous deformations.",
-        image: "https://example.com/topology-image.jpg",
-      },
-    ],
-  },
-  {
-    id: "calculus",
-    name: "Calculus",
-    image:
-      "https://img.freepik.com/free-vector/math-background_23-2148143983.jpg?t=st=1720817509~exp=1720821109~hmac=d77bb6561c39ee5043c2a570bfb7924d730a01962cd1be52f65632426f2b04c4&w=740",
-    description:
-      "Study of rates of change, accumulation, and functions of multiple variables.",
-    topics: [
-      {
-        id: "differential-calculus",
-        name: "Differential Calculus",
-        description: "Study of rates of change and slopes of curves.",
-        image: "https://example.com/differential-calculus-image.jpg",
-      },
-      {
-        id: "integral-calculus",
-        name: "Integral Calculus",
-        description:
-          "Study of accumulation of quantities and areas under curves.",
-        image: "https://example.com/integral-calculus-image.jpg",
-      },
-      {
-        id: "multivariable-calculus",
-        name: "Multivariable Calculus",
-        description:
-          "Study of functions of multiple variables and their derivatives.",
-        image: "https://example.com/multivariable-calculus-image.jpg",
+        id: "calculus",
+        name: "Calculus",
+        image:
+          "https://img.freepik.com/free-vector/math-background_23-2148143983.jpg?t=st=1720817509~exp=1720821109~hmac=d77bb6561c39ee5043c2a570bfb7924d730a01962cd1be52f65632426f2b04c4&w=740",
+        subtopics: [
+          {
+            id: "differential-calculus",
+            name: "Differential Calculus",
+            description:
+              "Differential calculus is concerned with the study of rates at which quantities change. It involves concepts such as derivatives, limits, and rates of change.",
+            quizzes: [
+              {
+                question: "What is differential calculus?",
+                options: [
+                  "The study of continuous functions",
+                  "The study of rates of change",
+                  "The study of geometric shapes",
+                  "The study of complex numbers",
+                ],
+                correct: "The study of rates of change",
+              },
+              {
+                question: "What is a derivative?",
+                options: [
+                  "A measure of change",
+                  "A measure of growth",
+                  "A measure of speed",
+                  "A measure of direction",
+                ],
+                correct: "A measure of change",
+              },
+              {
+                question: "How is the derivative of a function calculated?",
+                options: [
+                  "By its slope",
+                  "By its area",
+                  "By its volume",
+                  "By its length",
+                ],
+                correct: "By its slope",
+              },
+              {
+                question: "What is the chain rule used for in calculus?",
+                options: [
+                  "To find derivatives of composite functions",
+                  "To find areas under curves",
+                  "To find volumes of solids",
+                  "To find lengths of curves",
+                ],
+                correct: "To find derivatives of composite functions",
+              },
+              {
+                question: "What does the mean value theorem state?",
+                options: [
+                  "Every continuous function is differentiable",
+                  "There exists a point where the derivative equals the average rate of change",
+                  "There exists a point where the derivative is zero",
+                  "There exists a point where the derivative is undefined",
+                ],
+                correct:
+                  "There exists a point where the derivative equals the average rate of change",
+              },
+            ],
+          },
+          {
+            id: "integral-calculus",
+            name: "Integral Calculus",
+            description:
+              "Integral calculus deals with the accumulation of quantities and the computation of areas under curves. It involves concepts like antiderivatives, definite integrals, and areas.",
+            quizzes: [
+              {
+                question: "What is integral calculus?",
+                options: [
+                  "The study of continuous functions",
+                  "The study of rates of change",
+                  "The study of geometric shapes",
+                  "The study of accumulated quantities",
+                ],
+                correct: "The study of accumulated quantities",
+              },
+              {
+                question: "What is an antiderivative in integral calculus?",
+                options: [
+                  "The derivative of a function",
+                  "The integral of a function",
+                  "The inverse of a function",
+                  "The opposite of a function",
+                ],
+                correct: "The inverse of a function",
+              },
+              {
+                question: "How is the definite integral calculated?",
+                options: [
+                  "By its slope",
+                  "By its area",
+                  "By its volume",
+                  "By its length",
+                ],
+                correct: "By its area",
+              },
+              {
+                question:
+                  "What does the fundamental theorem of calculus state?",
+                options: [
+                  "Every continuous function is differentiable",
+                  "The derivative of an integral is the original function",
+                  "The integral of a derivative is the original function",
+                  "The integral of a function is always positive",
+                ],
+                correct:
+                  "The derivative of an integral is the original function",
+              },
+              {
+                question: "What is integration used for in calculus?",
+                options: [
+                  "To find derivatives",
+                  "To find slopes",
+                  "To find areas",
+                  "To find rates of change",
+                ],
+                correct: "To find areas",
+              },
+            ],
+          },
+          {
+            id: "multivariable-calculus",
+            name: "Multivariable Calculus",
+            description:
+              "Multivariable calculus deals with functions of several variables and their partial derivatives. It includes concepts like gradients, divergence, curl, and line integrals.",
+            quizzes: [
+              {
+                question: "What is multivariable calculus?",
+                options: [
+                  "The study of continuous functions",
+                  "The study of functions with multiple variables",
+                  "The study of geometric shapes",
+                  "The study of complex numbers",
+                ],
+                correct: "The study of functions with multiple variables",
+              },
+              {
+                question: "What are partial derivatives?",
+                options: [
+                  "Derivatives with constant variables",
+                  "Derivatives with multiple variables",
+                  "Derivatives with infinite variables",
+                  "Derivatives with changing variables",
+                ],
+                correct: "Derivatives with multiple variables",
+              },
+              {
+                question: "What is a gradient in multivariable calculus?",
+                options: [
+                  "A measure of change",
+                  "A measure of growth",
+                  "A measure of speed",
+                  "A measure of direction",
+                ],
+                correct: "A measure of change",
+              },
+              {
+                question: "What is a line integral used for?",
+                options: [
+                  "To find areas under curves",
+                  "To find volumes of solids",
+                  "To find lengths of curves",
+                  "To find work done along a path",
+                ],
+                correct: "To find work done along a path",
+              },
+              {
+                question: "What does Green's theorem relate in calculus?",
+                options: [
+                  "Line integrals and double integrals",
+                  "Derivatives and integrals",
+                  "Curves and surfaces",
+                  "Volumes and areas",
+                ],
+                correct: "Line integrals and double integrals",
+              },
+            ],
+          },
+        ],
       },
     ],
   },
@@ -1219,87 +1694,551 @@ export const maths_sub = [
 
 export const programming_sub = [
   {
-    id: "fundamentals",
-    name: "Programming Fundamentals",
-    image:
-      "https://img.freepik.com/free-vector/flat-computer-engineering-concept_23-2148152149.jpg?t=st=1720818712~exp=1720822312~hmac=804b33cc81e63a7311a4bcc966941dd0a0bf9b4096061bb08d01b0fb68a876cd&w=740",
-    description:
-      "Introduction to basic concepts and principles of programming.",
+    id: "programming",
+    name: "Programming",
     topics: [
       {
-        id: "variables",
-        name: "Variables and Data Types",
-        description: "Understanding different types of data and variables.",
-        image: "https://example.com/variables-image.jpg",
+        id: "webdev",
+        name: "Web Development",
+        description: "Study of creating and maintaining websites.",
+        image:
+          "https://img.freepik.com/free-vector/programmer-working-flat-style_52683-15041.jpg?t=st=1720888461~exp=1720892061~hmac=f465b0d310a11140d5cb4c60d675aae7019a7da6876ebc8619ad6a996fb33c48&w=740",
+        subtopics: [
+          {
+            id: "html-css",
+            name: "HTML & CSS",
+            description:
+              "HTML (HyperText Markup Language) is the standard language for creating web pages. It provides the basic structure of the site, which is then enhanced and modified by other technologies like CSS (Cascading Style Sheets) and JavaScript. CSS is used to control the presentation, formatting, and layout of web pages. With CSS, you can control the color, font, the spacing between elements, how elements are positioned and laid out, what background images or colors are used, and different display variations for different devices and screen sizes.",
+            quizzes: [
+              {
+                question: "What does HTML stand for?",
+                options: [
+                  "HyperText Machine Language",
+                  "HyperText and Links Markup Language",
+                  "HyperText Markup Language",
+                  "HyperText Markdown Language",
+                ],
+                correct: "HyperText Markup Language",
+              },
+              {
+                question: "What is the purpose of CSS?",
+                options: [
+                  "To create the structure of a webpage",
+                  "To style and layout web pages",
+                  "To add interactivity to a webpage",
+                  "To manage databases",
+                ],
+                correct: "To style and layout web pages",
+              },
+              {
+                question: "Which HTML tag is used to create a hyperlink?",
+                options: ["<link>", "<a>", "<href>", "<nav>"],
+                correct: "<a>",
+              },
+              {
+                question: "How do you apply a CSS class to an HTML element?",
+                options: [
+                  "Using the class attribute",
+                  "Using the id attribute",
+                  "Using the name attribute",
+                  "Using the style attribute",
+                ],
+                correct: "Using the class attribute",
+              },
+              {
+                question: "What does CSS stand for?",
+                options: [
+                  "Cascading Style Sheets",
+                  "Creative Style Sheets",
+                  "Computer Style Sheets",
+                  "Colorful Style Sheets",
+                ],
+                correct: "Cascading Style Sheets",
+              },
+            ],
+          },
+          {
+            id: "javascript",
+            name: "JavaScript",
+            description:
+              "JavaScript is a versatile programming language that is primarily used for creating interactive and dynamic content on the web. It allows developers to enhance the user experience by making web pages more engaging. JavaScript can be used to create animations, handle events (like clicks and form submissions), manipulate the DOM (Document Object Model) to dynamically update content, and communicate with servers to fetch or send data without reloading the page. It's an essential language for front-end development and is also widely used in server-side development with environments like Node.js.",
+            quizzes: [
+              {
+                question: "What is JavaScript primarily used for?",
+                options: [
+                  "Web development to create interactive effects",
+                  "Data analysis",
+                  "Server-side scripting",
+                  "Machine learning",
+                ],
+                correct: "Web development to create interactive effects",
+              },
+              {
+                question: "Which company developed JavaScript?",
+                options: ["Microsoft", "Apple", "Netscape", "Google"],
+                correct: "Netscape",
+              },
+              {
+                question:
+                  "What symbol is used to declare a variable in JavaScript?",
+                options: ["#", "$", "var, let, or const", "%"],
+                correct: "var, let, or const",
+              },
+              {
+                question: "What is the output of 'console.log(typeof 42)'?",
+                options: ["string", "number", "boolean", "object"],
+                correct: "number",
+              },
+              {
+                question: "How do you create a function in JavaScript?",
+                options: [
+                  "Using the function keyword followed by a name and parentheses",
+                  "Using the def keyword",
+                  "Using the func keyword",
+                  "Using the create keyword",
+                ],
+                correct:
+                  "Using the function keyword followed by a name and parentheses",
+              },
+            ],
+          },
+          {
+            id: "react",
+            name: "React.js",
+            description:
+              "React.js is a JavaScript library for building user interfaces, particularly for single-page applications where data can change over time. It allows developers to create reusable UI components that manage their state efficiently. React uses a virtual DOM (Document Object Model) to update the UI without reloading the page, resulting in a faster and more responsive user experience. It's widely used for its component-based architecture and declarative syntax.",
+            quizzes: [
+              {
+                question: "What is React.js primarily used for?",
+                options: [
+                  "Building user interfaces",
+                  "Data analysis",
+                  "Server-side scripting",
+                  "Machine learning",
+                ],
+                correct: "Building user interfaces",
+              },
+              {
+                question: "Which company developed React.js?",
+                options: ["Facebook", "Google", "Microsoft", "Apple"],
+                correct: "Facebook",
+              },
+              {
+                question: "What is JSX in the context of React.js?",
+                options: [
+                  "A JavaScript extension for building React components",
+                  "A data structure used for storing key-value pairs",
+                  "A version control system for React applications",
+                  "A tool for optimizing JavaScript performance",
+                ],
+                correct: "A JavaScript extension for building React components",
+              },
+              {
+                question: "What is a React component?",
+                options: [
+                  "A function or class that optionally accepts inputs and returns a React element",
+                  "A special HTML tag used in React applications",
+                  "A built-in JavaScript feature for optimizing performance",
+                  "An external library used for data fetching in React",
+                ],
+                correct:
+                  "A function or class that optionally accepts inputs and returns a React element",
+              },
+              {
+                question:
+                  "What lifecycle method is used for initial data loading in a React component?",
+                options: [
+                  "componentDidMount",
+                  "componentWillUnmount",
+                  "componentWillUpdate",
+                  "componentDidUpdate",
+                ],
+                correct: "componentDidMount",
+              },
+            ],
+          },
+        ],
       },
       {
-        id: "control-structures",
-        name: "Control Structures",
-        description: "Study of decision-making and loop structures.",
-        image: "https://example.com/control-structures-image.jpg",
+        id: "algorithms",
+        name: "Algorithms",
+        description: "Study of algorithms, their analysis, and optimization.",
+        image:
+          "https://img.freepik.com/premium-vector/programmer-working-computer-coders-programmers-writing-program-landing-page-web-it-courses-with-html-c_199064-1767.jpg?w=740",
+        subtopics: [
+          {
+            id: "sorting-algorithms",
+            name: "Sorting Algorithms",
+            description:
+              "Sorting algorithms are used to rearrange data in a specific order. They are fundamental to optimizing the efficiency of other algorithms and applications where data needs to be organized.",
+            quizzes: [
+              {
+                question: "What is the time complexity of Bubble Sort?",
+                options: ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+                correct: "O(n^2)",
+              },
+              {
+                question:
+                  "Which sorting algorithm is known for its average and worst-case time complexity of O(n log n)?",
+                options: [
+                  "Bubble Sort",
+                  "Insertion Sort",
+                  "Quick Sort",
+                  "Selection Sort",
+                ],
+                correct: "Quick Sort",
+              },
+              {
+                question: "What is a stable sorting algorithm?",
+                options: [
+                  "An algorithm that always sorts elements in ascending order",
+                  "An algorithm that maintains the relative order of records with equal keys",
+                  "An algorithm that sorts elements in descending order",
+                  "An algorithm that sorts elements based on a specific key",
+                ],
+                correct:
+                  "An algorithm that maintains the relative order of records with equal keys",
+              },
+              {
+                question:
+                  "What is the primary advantage of Merge Sort over Quick Sort?",
+                options: [
+                  "Merge Sort is easier to implement",
+                  "Merge Sort has a better average-case time complexity",
+                  "Merge Sort uses less memory",
+                  "Merge Sort is stable",
+                ],
+                correct: "Merge Sort is stable",
+              },
+              {
+                question:
+                  "How does Insertion Sort compare to Selection Sort in terms of time complexity?",
+                options: [
+                  "Insertion Sort has a lower worst-case time complexity",
+                  "Selection Sort has a lower average-case time complexity",
+                  "Insertion Sort is more efficient for large datasets",
+                  "Selection Sort is more stable for small datasets",
+                ],
+                correct:
+                  "Insertion Sort has a lower worst-case time complexity",
+              },
+            ],
+          },
+          {
+            id: "searching-algorithms",
+            name: "Searching Algorithms",
+            description:
+              "Searching algorithms are used to find specific items within a collection of data. They are crucial for applications that involve data retrieval and information processing.",
+            quizzes: [
+              {
+                question: "What is the time complexity of Linear Search?",
+                options: ["O(n)", "O(log n)", "O(n^2)", "O(1)"],
+                correct: "O(n)",
+              },
+              {
+                question:
+                  "Which searching algorithm requires the data to be in a sorted form?",
+                options: [
+                  "Linear Search",
+                  "Binary Search",
+                  "Depth-First Search",
+                  "Breadth-First Search",
+                ],
+                correct: "Binary Search",
+              },
+              {
+                question:
+                  "What is a disadvantage of Binary Search compared to Linear Search?",
+                options: [
+                  "Binary Search has higher time complexity",
+                  "Binary Search requires more memory",
+                  "Binary Search cannot handle unsorted data",
+                  "Binary Search is less efficient for large datasets",
+                ],
+                correct: "Binary Search cannot handle unsorted data",
+              },
+              {
+                question:
+                  "What is the primary advantage of Binary Search over Linear Search?",
+                options: [
+                  "Binary Search has a better worst-case time complexity",
+                  "Binary Search uses less memory",
+                  "Binary Search is more intuitive to implement",
+                  "Binary Search is stable for large datasets",
+                ],
+                correct:
+                  "Binary Search has a better worst-case time complexity",
+              },
+              {
+                question:
+                  "Which searching algorithm is commonly used for traversing tree structures?",
+                options: [
+                  "Linear Search",
+                  "Binary Search",
+                  "Depth-First Search",
+                  "Breadth-First Search",
+                ],
+                correct: "Depth-First Search",
+              },
+            ],
+          },
+          {
+            id: "graph-algorithms",
+            name: "Graph Algorithms",
+            description:
+              "Graph algorithms deal with problems involving graphs, which consist of nodes (vertices) connected by edges. These algorithms are used for tasks such as finding the shortest path, analyzing network connectivity, and optimizing transportation routes.",
+            quizzes: [
+              {
+                question: "What is a graph in the context of computer science?",
+                options: [
+                  "A visual representation of data",
+                  "A data structure consisting of nodes and edges",
+                  "A mathematical formula for data analysis",
+                  "A sorting technique for numerical data",
+                ],
+                correct: "A data structure consisting of nodes and edges",
+              },
+              {
+                question:
+                  "What is the time complexity of Depth-First Search (DFS) on a graph with n nodes?",
+                options: ["O(n)", "O(log n)", "O(n^2)", "O(V + E)"],
+                correct: "O(V + E)",
+              },
+              {
+                question:
+                  "What is a practical application of Breadth-First Search (BFS) in computer science?",
+                options: [
+                  "Shortest path finding",
+                  "Data compression",
+                  "Pattern recognition",
+                  "Machine learning",
+                ],
+                correct: "Shortest path finding",
+              },
+              {
+                question:
+                  "What is a disadvantage of Depth-First Search (DFS) compared to Breadth-First Search (BFS)?",
+                options: [
+                  "DFS cannot handle cyclic graphs",
+                  "DFS uses more memory",
+                  "DFS has higher time complexity",
+                  "DFS is less intuitive to implement",
+                ],
+                correct: "DFS uses more memory",
+              },
+              {
+                question:
+                  "Which graph traversal algorithm is typically used to detect cycles in a graph?",
+                options: [
+                  "Linear Search",
+                  "Binary Search",
+                  "Depth-First Search",
+                  "Breadth-First Search",
+                ],
+                correct: "Depth-First Search",
+              },
+            ],
+          },
+        ],
       },
       {
-        id: "functions",
-        name: "Functions",
-        description: "Defining and using functions in programming.",
-        image: "https://example.com/functions-image.jpg",
-      },
-    ],
-  },
-  {
-    id: "algorithms",
-    name: "Algorithms",
-    image:
-      "https://img.freepik.com/premium-vector/programmer-working-computer-coders-programmers-writing-program-landing-page-web-it-courses-with-html-c_199064-1767.jpg?w=740",
-    description: "Study of algorithms, their analysis, and optimization.",
-    topics: [
-      {
-        id: "sorting-algorithms",
-        name: "Sorting Algorithms",
-        description: "Exploring different algorithms to sort data.",
-        image: "https://example.com/sorting-algorithms-image.jpg",
-      },
-      {
-        id: "searching-algorithms",
-        name: "Searching Algorithms",
-        description: "Understanding algorithms to search for elements in data.",
-        image: "https://example.com/searching-algorithms-image.jpg",
-      },
-      {
-        id: "dynamic-programming",
-        name: "Dynamic Programming",
+        id: "oop",
+        name: "Object-Oriented Programming (OOP)",
         description:
-          "Technique for solving complex problems by breaking them down into simpler subproblems.",
-        image: "https://example.com/dynamic-programming-image.jpg",
-      },
-    ],
-  },
-  {
-    id: "web-development",
-    name: "Web Development",
-    image:
-      "https://img.freepik.com/free-vector/hand-drawn-flat-design-api-illustration_23-2149365021.jpg?t=st=1720818728~exp=1720822328~hmac=fd724b338256e22a284942c9457b8e9ad1f5c627fdd11965b1e604d0a9c8263d&w=740",
-    description:
-      "Study of technologies and practices for developing web applications.",
-    topics: [
-      {
-        id: "html-css",
-        name: "HTML & CSS",
-        description:
-          "Building blocks of web development for structure and styling.",
-        image: "https://example.com/html-css-image.jpg",
-      },
-      {
-        id: "javascript",
-        name: "JavaScript",
-        description: "Programming language for interactive web development.",
-        image: "https://example.com/javascript-image.jpg",
-      },
-      {
-        id: "react",
-        name: "React.js",
-        description: "Library for building user interfaces in JavaScript.",
-        image: "https://example.com/reactjs-image.jpg",
+          "Introduction to Object-Oriented Programming (OOP) concepts.",
+        image:
+          "https://img.freepik.com/premium-vector/flat-vector-no-data-search-error-landing-concept-illustration_939213-307.jpg?uid=R118717261&ga=GA1.1.1968535108.1718362013&semt=sph",
+        subtopics: [
+          {
+            id: "class-object",
+            name: "Class & Object",
+            description:
+              "Object-Oriented Programming (OOP) is a programming paradigm based on the concept of objects, which can contain data in the form of fields (attributes or properties) and code in the form of procedures (methods). OOP allows for the definition of data structures, called classes, and the creation of objects based on these classes. It supports concepts like encapsulation, inheritance, and polymorphism.",
+            quizzes: [
+              {
+                question: "What is a class in object-oriented programming?",
+                options: [
+                  "A blueprint for creating objects that share the same behavior and properties",
+                  "An instance of an object",
+                  "A method for manipulating data",
+                  "A data structure for organizing elements",
+                ],
+                correct:
+                  "A blueprint for creating objects that share the same behavior and properties",
+              },
+              {
+                question: "What is an object in object-oriented programming?",
+                options: [
+                  "A variable used to store data",
+                  "A class used to create instances",
+                  "An integer value",
+                  "A function used to perform calculations",
+                ],
+                correct: "An instance of an object",
+              },
+              {
+                question:
+                  "What is the process of creating an object from a class called?",
+                options: [
+                  "Instantiation",
+                  "Abstraction",
+                  "Inheritance",
+                  "Polymorphism",
+                ],
+                correct: "Instantiation",
+              },
+              {
+                question:
+                  "What are attributes and behaviors in the context of object-oriented programming?",
+                options: [
+                  "Names of objects and their actions",
+                  "Data and methods defined in a class",
+                  "Inherited properties from parent classes",
+                  "Public and private access modifiers",
+                ],
+                correct: "Data and methods defined in a class",
+              },
+              {
+                question:
+                  "What is the primary advantage of using classes in object-oriented programming?",
+                options: [
+                  "Simplifying the code organization",
+                  "Improving memory efficiency",
+                  "Facilitating code reuse and modularity",
+                  "Minimizing the need for debugging",
+                ],
+                correct: "Facilitating code reuse and modularity",
+              },
+            ],
+          },
+          {
+            id: "inheritance",
+            name: "Inheritance",
+            description:
+              "Inheritance is a mechanism in Object-Oriented Programming (OOP) that allows one class (subclass or derived class) to inherit the properties and behaviors (methods) of another class (superclass or base class). It promotes code reusability and hierarchical relationships between classes.",
+            quizzes: [
+              {
+                question: "What is inheritance in object-oriented programming?",
+                options: [
+                  "The process of creating a new class from an existing class",
+                  "The process of creating objects from classes",
+                  "A mechanism for accessing class attributes",
+                  "An algorithm for data sorting",
+                ],
+                correct:
+                  "The process of creating a new class from an existing class",
+              },
+              {
+                question:
+                  "What is a superclass and subclass relationship in inheritance?",
+                options: [
+                  "A parent-child relationship where the subclass inherits attributes and behaviors from the superclass",
+                  "An interface for implementing multiple classes",
+                  "A design pattern for managing data structures",
+                  "A function for calculating mathematical operations",
+                ],
+                correct:
+                  "A parent-child relationship where the subclass inherits attributes and behaviors from the superclass",
+              },
+              {
+                question: "What is method overriding in inheritance?",
+                options: [
+                  "A process of defining the same method name in both superclass and subclass",
+                  "A technique for extending class functionality",
+                  "An algorithm for searching elements in an array",
+                  "A strategy for implementing recursive functions",
+                ],
+                correct:
+                  "A process of defining the same method name in both superclass and subclass",
+              },
+              {
+                question:
+                  "What is a constructor in the context of inheritance?",
+                options: [
+                  "A method for initializing objects in a class",
+                  "An algorithm for data sorting",
+                  "A function for calculating mathematical operations",
+                  "A technique for accessing class attributes",
+                ],
+                correct: "A method for initializing objects in a class",
+              },
+              {
+                question:
+                  "What is the advantage of using inheritance in object-oriented programming?",
+                options: [
+                  "Simplifying the code organization",
+                  "Improving memory efficiency",
+                  "Facilitating code reuse and modularity",
+                  "Minimizing the need for debugging",
+                ],
+                correct: "Facilitating code reuse and modularity",
+              },
+            ],
+          },
+          {
+            id: "polymorphism",
+            name: "Polymorphism",
+            description:
+              "Object-Oriented Programming (OOP) is a programming paradigm based on the concept of objects, which can contain data in the form of fields (attributes or properties) and code in the form of procedures (methods). OOP allows for the definition of data structures, called classes, and the creation of objects based on these classes. It supports concepts like encapsulation, inheritance, and polymorphism.",
+            quizzes: [
+              {
+                question:
+                  "What is polymorphism in object-oriented programming?",
+                options: [
+                  "The ability of a method to do different things based on the object that it is acting upon",
+                  "A method for extending class functionality",
+                  "A design pattern for managing data structures",
+                  "An algorithm for data sorting",
+                ],
+                correct:
+                  "The ability of a method to do different things based on the object that it is acting upon",
+              },
+              {
+                question: "What is method overloading in polymorphism?",
+                options: [
+                  "A process of defining multiple methods with the same name but different parameters in a class",
+                  "A technique for extending class functionality",
+                  "An algorithm for data searching",
+                  "A strategy for implementing recursive functions",
+                ],
+                correct:
+                  "A process of defining multiple methods with the same name but different parameters in a class",
+              },
+              {
+                question: "What is method overriding in polymorphism?",
+                options: [
+                  "A process of defining the same method name in both superclass and subclass",
+                  "A technique for extending class functionality",
+                  "An algorithm for searching elements in an array",
+                  "A strategy for implementing recursive functions",
+                ],
+                correct:
+                  "A process of defining the same method name in both superclass and subclass",
+              },
+              {
+                question: "What is dynamic polymorphism?",
+                options: [
+                  "A type of polymorphism that occurs at compile time",
+                  "A type of polymorphism that occurs at runtime",
+                  "A mechanism for accessing class attributes",
+                  "An algorithm for data sorting",
+                ],
+                correct: "A type of polymorphism that occurs at runtime",
+              },
+              {
+                question:
+                  "What is the advantage of using polymorphism in object-oriented programming?",
+                options: [
+                  "Simplifying the code organization",
+                  "Improving memory efficiency",
+                  "Facilitating code reuse and modularity",
+                  "Minimizing the need for debugging",
+                ],
+                correct: "Facilitating code reuse and modularity",
+              },
+            ],
+          },
+        ],
       },
     ],
   },

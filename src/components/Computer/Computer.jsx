@@ -1,6 +1,6 @@
 import React from "react";
 import ComputerSubCard from "./ComputerSubCard";
-import { programming_sub } from "../utils/Data";
+import { programming_sub } from "../../utils/Data";
 const Computer = () => {
   return (
     <div className="py-10">
@@ -11,7 +11,7 @@ const Computer = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {" "}
-            {programming_sub?.map((subject) => (
+            {programming_sub[0].topics?.map((subject) => (
               <ComputerSubCard
                 key={subject.id}
                 id={subject.id}

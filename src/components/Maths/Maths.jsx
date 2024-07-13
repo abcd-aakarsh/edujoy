@@ -1,5 +1,5 @@
 import React from "react";
-import { maths_sub } from "../utils/Data";
+import { maths_sub } from "../../utils/Data";
 
 import MathsSubCard from "./MathsSubCard";
 const Maths = () => {
@@ -12,7 +12,7 @@ const Maths = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {" "}
-            {maths_sub?.map((subject) => (
+            {maths_sub[0].topics?.map((subject) => (
               <MathsSubCard
                 key={subject.id}
                 id={subject.id}
